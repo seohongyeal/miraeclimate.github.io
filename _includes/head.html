@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -9,4 +9,10 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link href="http://dev1.4dsolution.co.kr/static/site2/kor/css/jquery.bxslider.css" rel="stylesheet" rel="stylesheet" />
+  <link href="http://dev1.4dsolution.co.kr/static/site2/kor/css/main.css" rel="stylesheet" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://dev1.4dsolution.co.kr/static/site1/eng/js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.exp&region=KR"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 </head>
